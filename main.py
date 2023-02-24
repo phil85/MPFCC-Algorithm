@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv('illustrative_example.csv')
 
 # Extract features and colors
-features = df.values[:, 1:-1]
+X = df.values[:, 1:-1]
 colors = df.values[:, -1].astype(int)
 
 # Define parameters
@@ -18,7 +18,7 @@ max_cardinality = 11
 min_balance = 1
 
 # Run MPFCC-Algorithm
-labels = mpfcc(features, colors, number_of_clusters, max_cardinality, min_balance,
+labels = mpfcc(X, colors, number_of_clusters, max_cardinality, min_balance,
                random_state=24, mpfcc_time_limit=300)
 
 # Visualize resulting partition
