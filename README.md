@@ -9,15 +9,14 @@ A model-based algorithm for the fair-capacitated clustering problem.
 
 The MPFCC-Algorithm depends on:
 * [Gurobi](https://anaconda.org/Gurobi/gurobi)
-* [Numpy](https://anaconda.org/conda-forge/numpy)
-* [Scipy](https://anaconda.org/anaconda/scipy)
 
-Gurobi is a commercial mathematical programming solver. Free academic licenses are available [here](https://www.gurobi.com/academia/academic-program-and-licenses/). 
+Gurobi is a commercial mathematical programming solver. Free academic licenses are available [here](https://www.gurobi.com/academia/academic-program-and-licenses/). The other dependencise are included in the requirements.txt file. 
 
 ## Installation
 
 1) Download and install Gurobi (https://www.gurobi.com/downloads/)
 2) Clone this repository (git clone https://github.com/phil85/MPFCC-Algorithm.git)
+3) Install the dependencies (pip install -r requirements.txt)
 
 ## Usage
 
