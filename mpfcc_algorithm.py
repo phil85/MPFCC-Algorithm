@@ -227,7 +227,7 @@ def mpfcc(X, colors, n_clusters, cardinality, balance, random_state, mpfcc_time_
     # Assign objects
     labels, run_time, status = assign_objects(X, centers, colors, balance, cardinality)
 
-    if status != gb.GRB.INFEASIBLE and labels != []:
+    if status != gb.GRB.INFEASIBLE and len(labels) > 0:
 
         # Initialize best labels
         best_labels = labels
@@ -242,7 +242,7 @@ def mpfcc(X, colors, n_clusters, cardinality, balance, random_state, mpfcc_time_
 
             labels, run_time, status = assign_objects(X, centers, colors, balance, cardinality)
 
-            if labels != []:
+            if len(labels) > 0:
                 # Update centers
                 centers, center_index, update_time = update_centers(X, centers, n_clusters, labels)
 

@@ -1,3 +1,6 @@
+[![License](https://img.shields.io/badge/License-MIT_License-blue)](LICENSE)
+[![Paper](https://img.shields.io/badge/Paper-available_here-green)](https://ieeexplore.ieee.org/document/10406388)
+
 # MPFCC-Algorithm
 
 A model-based algorithm for the fair-capacitated clustering problem. 
@@ -22,23 +25,25 @@ The main.py file contains code that applies the MPFCC-algorithm to an illustrati
 
 ```python
 labels = mpfcc(X, colors, number_of_clusters, max_cardinality, min_balance,
-               random_state=24, mpfcc_time_limit=300)
+               random_state=2, mpfcc_time_limit=300)
 ```
 
 ## Reference
 
 Please cite the following paper if you use this algorithm.
 
-**Tran, V. Kammermann, M., Baumann, P.** (2023): The MPFCC algorithm: a model-based approach for fair-capacitated clustering. In preparation
+**Tran, V.; Kammermann, M.; Baumann, P.** (2023): The MPFCC algorithm: A model-based approach for fair-capacitated clustering. In: Proceedings of the 2023 IEEE International Conference on Industrial Engineering and Engineering Management. Singapore, 0677-0681
+
 
 Bibtex:
 ```
-@inproceedings{baumann2020clustering,
-	author={Vanessa Tran and Manuel Kammermann and Philipp Baumann
-	title={The MPFCC algorithm: a model-based approach for fair-capacitated clustering},
-	year={2023},
-	note={In preparation},
-}
+@inproceedings{tran2023mpfcc,
+  author={Tran, Vanessa and Kammermann, Manuel and Baumann, Philipp},
+  booktitle={2023 IEEE International Conference on Industrial Engineering and Engineering Management (IEEM)}, 
+  title={The MPFCC Algorithm: A Model-Based Approach for Fair-Capacitated Clustering}, 
+  year={2023},
+  pages={0677-0681},
+  doi={10.1109/IEEM58616.2023.10406388}}
 ```
 
 ## License

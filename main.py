@@ -19,7 +19,7 @@ min_balance = 1
 
 # Run MPFCC-Algorithm
 labels = mpfcc(X, colors, number_of_clusters, max_cardinality, min_balance,
-               random_state=24, mpfcc_time_limit=300)
+               random_state=2, mpfcc_time_limit=300)
 
 # Visualize resulting partition
 centers = np.unique(labels)
